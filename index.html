@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OnlyClient – Minecraft Client herunterladen</title>
+  <meta name="description" content="OnlyClient – Minecraft Client mit Mods, Instanzen, Capes und anpassbarem Design. Kostenlos für Windows.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-glow"></div>
+  <div class="bg-grid"></div>
+
+  <header class="top">
+    <div class="brand">
+      <img src="assets/logo.png" alt="OnlyClient" class="logo" onerror="this.style.display='none'">
+      <span>OnlyClient</span>
+    </div>
+    <nav>
+      <a href="#features">Funktionen</a>
+      <a href="shop.html" target="_blank" rel="noopener">Only+ Shop</a>
+      <a href="#download">Herunterladen</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="badge">Version <span id="version">2.6.0</span> · Windows</p>
+      <h1>Dein Minecraft-<br><em>Client</em>, dein Stil</h1>
+      <p class="lead">OnlyClient verwaltet Instanzen, installiert Mods von Modrinth, bringt Capes & Emotes mit — und lässt sich komplett anpassen.</p>
+      <div class="cta" id="download">
+        <a class="btn btn-primary" href="./downloads/OnlyClient-Setup.exe" download="OnlyClient-Setup.exe" id="dl-setup">
+          <strong>OnlyClient installieren</strong>
+          <span>OnlyClient-Setup.exe · Windows</span>
+        </a>
+        <a class="btn btn-ghost" href="shop.html" target="_blank" rel="noopener">
+          <strong>Only+ Shop</strong>
+          <span>o+-Abzeichen im Spiel</span>
+        </a>
+      </div>
+      <p class="note" id="dl-warn" style="display:none;color:#ff8c42">Installer fehlt — bitte Seite neu deployen nach <code>npm run build:website</code></p>
+      <p class="note">Updates kommen automatisch — nach der Installation musst du nichts mehr manuell laden.</p>
+    </section>
+
+    <section class="features" id="features">
+      <h2>Was OnlyClient kann</h2>
+      <div class="grid">
+        <article>
+          <div class="ico">🧩</div>
+          <h3>Mods & Modpacks</h3>
+          <p>Modrinth durchsuchen, per Drag & Drop installieren, Fabric/Quilt/NeoForge.</p>
+        </article>
+        <article>
+          <div class="ico">🎨</div>
+          <h3>Design & Hintergrund</h3>
+          <p>Farben, Leuchteffekte, Partikel, eigenes Hintergrundbild — Deutsch oder Englisch.</p>
+        </article>
+        <article>
+          <div class="ico">👤</div>
+          <h3>Profil & Capes</h3>
+          <p>Skin hochladen, OnlyClient-Capes, EmoteCraft im Spiel.</p>
+        </article>
+        <article>
+          <div class="ico">▶</div>
+          <h3>Spielen</h3>
+          <p>Instanzen verwalten, Server speichern, separates Log-Fenster beim Start.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="install">
+      <h2>Installation</h2>
+      <ol>
+        <li><code>OnlyClient-Setup.exe</code> herunterladen und ausführen.</li>
+        <li>Installation durchklicken — Desktop-Verknüpfung „OnlyClient“ erscheint.</li>
+        <li>OnlyClient öffnen, mit Microsoft anmelden, Instanz erstellen, spielen.</li>
+      </ol>
+      <p class="note">Benötigt Minecraft Java Edition (Microsoft-Konto). Kein offizielles Mojang-Produkt.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>OnlyClient · Nicht mit Mojang/Microsoft verbunden</p>
+  </footer>
+
+  <script>
+    fetch("version.json")
+      .then((r) => r.ok ? r.json() : null)
+      .then((v) => {
+        if (v?.version) document.getElementById("version").textContent = v.version;
+        if (v?.setupSize) document.querySelector("#dl-setup span").textContent += ` · ${v.setupSize}`;
+        if (v?.setupDownloadUrl) document.getElementById("dl-setup").href = v.setupDownloadUrl;
+        if (v && v.setupAvailable === false) {
+          document.getElementById("dl-warn").style.display = "block";
+          document.getElementById("dl-setup").classList.add("disabled");
+        }
+      })
+      .catch(() => {});
+  </script>
+</body>
+</html>

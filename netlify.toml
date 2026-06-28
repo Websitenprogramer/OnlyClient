@@ -1,0 +1,36 @@
+# Netlify — OnlyClient Download-Seite + Only+ Shop
+
+[build]
+  publish = "."
+  command = "echo skip"
+  functions = "netlify/functions"
+
+[[headers]]
+  for = "/downloads/*"
+  [headers.values]
+    Content-Type = "application/octet-stream"
+    Content-Disposition = "attachment"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/updates/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300"
+
+[[headers]]
+  for = "/updates/*.exe"
+  [headers.values]
+    Content-Type = "application/octet-stream"
+    Cache-Control = "public, max-age=300"
+
+[[headers]]
+  for = "/updates/*.blockmap"
+  [headers.values]
+    Content-Type = "application/octet-stream"
+    Cache-Control = "public, max-age=300"
+
+[[headers]]
+  for = "/updates/latest.yml"
+  [headers.values]
+    Content-Type = "text/yaml; charset=utf-8"
+    Cache-Control = "public, max-age=60"

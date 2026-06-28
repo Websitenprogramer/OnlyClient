@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Only+ Shop – OnlyClient</title>
+  <meta name="description" content="Only+ — o+-Abzeichen im Spiel. Kaufen oder verschenken.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="shop.css">
+</head>
+<body class="shop-page">
+  <div class="bg-glow"></div>
+  <div class="bg-grid"></div>
+
+  <header class="top shop-top">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="OnlyClient" class="logo" onerror="this.style.display='none'">
+      <span>OnlyClient</span>
+    </a>
+    <nav>
+      <a href="index.html">Herunterladen</a>
+      <a href="shop.html" class="nav-active">Only+ Shop</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="shop-hero">
+      <div class="plus-badge-preview xl"><span class="plus-o">o</span><span class="plus-plus">+</span></div>
+      <h1>Only+</h1>
+      <p class="shop-tagline">Pinkes <strong>o+</strong> vor deinem Namen — Tab-Liste &amp; über dem Kopf im Mehrspieler.</p>
+    </section>
+
+    <div class="shop-tabs" role="tablist">
+      <button type="button" class="shop-tab active" data-panel="buy">Kaufen</button>
+      <button type="button" class="shop-tab" data-panel="gift">Verschenken</button>
+    </div>
+
+    <section class="shop-panel active" id="panel-buy">
+      <div class="price-card">
+        <p class="price-label">Lebenslang</p>
+        <p class="price-amount">9,99&nbsp;€</p>
+        <p class="price-note">Einmalig · für immer · kein Abo</p>
+        <ul class="price-features">
+          <li><span class="plus-badge-preview sm"><span class="plus-o">o</span><span class="plus-plus">+</span></span> Abzeichen in der Tab-Liste</li>
+          <li>Nametag über dem Kopf</li>
+          <li>Synchronisation mit der OnlyClient-Mod</li>
+        </ul>
+      </div>
+
+      <div class="shop-card shop-buy-block">
+        <h3>Only+ kaufen</h3>
+        <p class="note">Minecraft-Java-Name eingeben, kaufen, OnlyClient starten — Abzeichen erscheint im Spiel.</p>
+        <label class="shop-label">Dein Minecraft-Name<input id="shop-username" placeholder="Steve" maxlength="16" autocomplete="off"></label>
+        <div id="shop-status" class="shop-status-wrap"><p class="note">Name eingeben und Status prüfen.</p></div>
+        <div class="shop-btns">
+          <button type="button" class="btn-shop primary big" id="btn-shop-buy">Jetzt kaufen · 9,99 €</button>
+          <button type="button" class="btn-shop ghost" id="btn-shop-check">Status prüfen</button>
+        </div>
+        <p class="note shop-test">Test-Zahlung — später echte Zahlung möglich.</p>
+      </div>
+    </section>
+
+    <section class="shop-panel" id="panel-gift">
+      <div class="shop-card gift-card">
+        <h3>Only+ verschenken</h3>
+        <p class="note">Nur mit aktivem Only+ — Geschenk geht sofort an den Empfänger.</p>
+        <label class="shop-label">Dein Minecraft-Name<input id="shop-gifter" value="OnlyNoah3" maxlength="16" autocomplete="off"></label>
+        <label class="shop-label">Empfänger<input id="shop-recipient" placeholder="Steve" maxlength="16" autocomplete="off"></label>
+        <button type="button" class="btn-shop primary big" id="btn-shop-gift">Only+ verschenken</button>
+        <div id="gift-list" class="gift-list"></div>
+      </div>
+    </section>
+
+    <p class="shop-msg" id="shop-msg" style="display:none"></p>
+
+    <details class="shop-admin-panel" id="shop-admin-panel">
+      <summary>Verwaltung · Gold Only+ vergeben</summary>
+      <div class="shop-card admin-card">
+        <p class="note">Nur für Verwalter — setze <code>PLUS_ADMIN_SECRET</code> als Cloudflare Pages Secret.</p>
+        <label class="shop-label">Verwaltungs-Schlüssel<input id="admin-secret" type="password" autocomplete="off" placeholder="PLUS_ADMIN_SECRET"></label>
+        <label class="shop-label">Minecraft-Name<input id="admin-username" placeholder="Steve" maxlength="16" autocomplete="off"></label>
+        <div class="shop-btns">
+          <button type="button" class="btn-shop primary" id="btn-admin-grant">Gold Only+ vergeben</button>
+          <button type="button" class="btn-shop ghost" id="btn-admin-revoke">Only+ entziehen</button>
+        </div>
+        <div id="admin-result" class="admin-result"></div>
+      </div>
+    </details>
+  </main>
+
+  <footer>
+    <p><a href="index.html">← OnlyClient herunterladen</a> · Nicht mit Mojang/Microsoft verbunden</p>
+  </footer>
+
+  <script src="js/shop.js"></script>
+</body>
+</html>

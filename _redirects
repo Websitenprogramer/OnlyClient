@@ -1,0 +1,7 @@
+# Alte Netlify-Pfade → neue Cloudflare-APIs (Kompatibilität)
+/.netlify/functions/plus-api          /api/plus-api          200
+/.netlify/functions/nametags-api      /api/nametags-api      200
+/.netlify/functions/gallery-api       /api/gallery-api       200
+/.netlify/functions/voice-api       /api/voice-api         200
+/.netlify/functions/capes-api         /api/capes-api         200
+/.netlify/functions/friends-chat-api  /api/friends-chat-api  200

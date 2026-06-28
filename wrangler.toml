@@ -1,0 +1,19 @@
+# Cloudflare Pages — OnlyClient Website + APIs
+# KV-ID nach Ersteinrichtung in website/.kv-id (siehe DEPLOY-CLOUDFLARE.md)
+# Installer >25 MiB: R2-Bucket + Functions (nicht per Drag-and-Drop deployen)
+
+name = "onlyclient"
+compatibility_date = "2024-06-01"
+pages_build_output_dir = "."
+
+[[kv_namespaces]]
+binding = "DATA"
+id = "d935b0f117e741b48eac05528fedb74f"
+preview_id = "d935b0f117e741b48eac05528fedb74f"
+
+[[r2_buckets]]
+binding = "RELEASES"
+bucket_name = "onlyclient-releases"
+
+[vars]
+# Öffentlich — kein Geheimnis

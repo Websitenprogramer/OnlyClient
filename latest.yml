@@ -1,0 +1,8 @@
+version: 2.7.33
+files:
+  - url: https://github.com/noahs/Minecraft-Launcher/releases/download/v2.7.34/OnlyClient-Setup.exe
+    sha512: MX+XtgfK0il46d2qfHYVUA6rL33wtiG9GyQoBhg4yaVwmT7ZfjyN0Oa8WSSsgAL9Z60OT5/V+flS4BCFrpfA3w==
+    size: 84590549
+path: https://github.com/noahs/Minecraft-Launcher/releases/download/v2.7.34/OnlyClient-Setup.exe
+sha512: MX+XtgfK0il46d2qfHYVUA6rL33wtiG9GyQoBhg4yaVwmT7ZfjyN0Oa8WSSsgAL9Z60OT5/V+flS4BCFrpfA3w==
+releaseDate: '2026-06-28T18:50:22.384Z'

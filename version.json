@@ -1,0 +1,13 @@
+{
+  "version": "2.7.34",
+  "productName": "OnlyClient",
+  "setupAvailable": true,
+  "portableAvailable": false,
+  "setupSize": "80.7 MB",
+  "setupBuiltAt": "2026-06-28T18:50:20.899Z",
+  "builtAt": "2026-06-28T19:17:44.479Z",
+  "updateUrl": "https://noahs.github.io/Minecraft-Launcher/updates",
+  "hosting": "github",
+  "setupDownloadUrl": "https://github.com/noahs/Minecraft-Launcher/releases/download/v2.7.34/OnlyClient-Setup.exe",
+  "autoUpdate": true
+}

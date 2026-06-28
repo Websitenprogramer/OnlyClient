@@ -1,0 +1,19 @@
+/downloads/*
+  Content-Type: application/octet-stream
+  Content-Disposition: attachment
+  Cache-Control: public, max-age=3600
+
+/updates/*
+  Cache-Control: public, max-age=300
+
+/updates/*.exe
+  Content-Type: application/octet-stream
+  Cache-Control: public, max-age=300
+
+/updates/*.blockmap
+  Content-Type: application/octet-stream
+  Cache-Control: public, max-age=300
+
+/updates/latest.yml
+  Content-Type: text/yaml; charset=utf-8
+  Cache-Control: public, max-age=60
