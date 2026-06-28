@@ -1,8 +1,8 @@
 version: 2.7.35
 files:
-  - url: OnlyClient-Setup.exe
+  - url: https://github.com/Websitenprogramer/OnlyClient/releases/download/v2.7.35/OnlyClient-Setup.exe
     sha512: t1ysU2LGPBHRxJtAgiTeQ0+28eQK05sWLY3D/1rkvs35sPXUF17xo/jR4EDBgBtV18NF8lhcPvylTu+Bbv9KqA==
     size: 84591237
-path: OnlyClient-Setup.exe
+path: https://github.com/Websitenprogramer/OnlyClient/releases/download/v2.7.35/OnlyClient-Setup.exe
 sha512: t1ysU2LGPBHRxJtAgiTeQ0+28eQK05sWLY3D/1rkvs35sPXUF17xo/jR4EDBgBtV18NF8lhcPvylTu+Bbv9KqA==
 releaseDate: '2026-06-28T21:33:31.593Z'
