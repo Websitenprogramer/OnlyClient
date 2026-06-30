@@ -1,4 +1,4 @@
-version: 2.8.1
+version: 2.8.3
 files:
   - url: https://github.com/Websitenprogramer/OnlyClient/releases/download/v2.8.1/OnlyClient-Setup.exe
     sha512: /h5pp4MtIvkYhRAvOrLiWQTtkFREbbSIDDBfvRtPGwtXFhWu3lFMLV/gdOKagEN92FNYN/jHp3w3fdiVWnJCUA==
