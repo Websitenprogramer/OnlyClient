@@ -1,8 +1,8 @@
-version: 2.9.0
+version: 2.10.0
 files:
-  - url: https://github.com/Websitenprogramer/OnlyClient/releases/download/v2.9.0/OnlyClient-Setup.exe
-    sha512: W2WE+wGFd4SFosmnUNJ6lm5P4WBVF/y+TF5/6J/85Glo7CeQXzKAM5fF5JOC2AM7iIbEgib3FDTOw2rcg0B1PQ==
-    size: 84599874
-path: https://github.com/Websitenprogramer/OnlyClient/releases/download/v2.8.3/OnlyClient-Setup.exe
-sha512: W2WE+wGFd4SFosmnUNJ6lm5P4WBVF/y+TF5/6J/85Glo7CeQXzKAM5fF5JOC2AM7iIbEgib3FDTOw2rcg0B1PQ==
-releaseDate: '2026-06-30T17:53:55.651Z'
+  - url: https://github.com/Websitenprogramer/OnlyClient/releases/download/v2.10.0/OnlyClient-Setup.exe
+    sha512: SDJjyWwImMJNRjxB0xy67M0sYP7yqTlr4Hj4tU+h87v7aOLQQxdDhzjpY6OQaqeXweqAH5SqhEOS+zoCUhYXnw==
+    size: 84570917
+path: OnlyClient-Setup.exe
+sha512: SDJjyWwImMJNRjxB0xy67M0sYP7yqTlr4Hj4tU+h87v7aOLQQxdDhzjpY6OQaqeXweqAH5SqhEOS+zoCUhYXnw==
+releaseDate: '2026-07-02T16:55:46.199Z'
