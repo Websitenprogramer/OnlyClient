@@ -40,6 +40,15 @@
           <span>o+-Abzeichen im Spiel</span>
         </a>
       </div>
+
+      <section class="skin-preview" id="skin-preview" aria-label="OnlyClient Charakter-Vorschau">
+        <h2 class="skin-preview-title">Client-Vorschau</h2>
+        <p class="skin-preview-hint">Ziehen zum Drehen · Scrollen zum Zoomen</p>
+        <div class="skin-preview-stage">
+          <canvas id="skin-preview-canvas" aria-label="3D-Modell des OnlyClient-Charakters"></canvas>
+        </div>
+      </section>
+
       <p class="note" id="dl-warn" style="display:none;color:#ff8c42">Installer fehlt — bitte Seite neu deployen nach <code>npm run build:website</code></p>
       <p class="note">Updates kommen automatisch — nach der Installation musst du nichts mehr manuell laden.</p>
     </section>
@@ -85,6 +94,7 @@
     <p>OnlyClient · Nicht mit Mojang/Microsoft verbunden</p>
   </footer>
 
+  <script src="js/skin-viewer.js" defer></script>
   <script>
     fetch("version.json")
       .then((r) => r.ok ? r.json() : null)
