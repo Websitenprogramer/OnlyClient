@@ -57,6 +57,27 @@ body{
   background:var(--card);border:1px solid var(--line);color:var(--text);
 }
 .note{font-size:.85rem;color:var(--muted)}
+.skin-preview{
+  max-width:360px;margin:36px auto 4px;text-align:center;
+}
+.skin-preview-title{
+  font-size:1.1rem;font-weight:600;margin-bottom:6px;
+  background:linear-gradient(135deg,var(--pink),var(--purple));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.skin-preview-hint{font-size:.8rem;color:var(--muted);margin-bottom:14px}
+.skin-preview-stage{
+  background:var(--card);border:1px solid var(--line);border-radius:20px;
+  padding:16px;box-shadow:0 10px 40px rgba(123,44,191,.18);
+  overflow:hidden;
+}
+.skin-preview-stage canvas{
+  display:block;width:100%;height:auto;cursor:grab;touch-action:none;
+  border-radius:12px;
+}
+.skin-preview-stage canvas:active{cursor:grabbing}
+.skin-preview:not(.skin-preview--ready) .skin-preview-stage{opacity:.55}
+.skin-preview--failed .skin-preview-hint::after{content:" · 3D-Vorschau nicht verfügbar"}
 .features,.install{
   max-width:1100px;margin:0 auto;padding:48px 24px 64px;
 }
