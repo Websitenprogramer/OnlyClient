@@ -1,5 +1,5 @@
 {
-  "version": "3.0.0 ,
+  "version": "3.0.1,
   "productName": "OnlyClient",
   "setupAvailable": true,
   "portableAvailable": false,
@@ -8,6 +8,6 @@
   "builtAt": "2026-06-28T19:17:44.479Z",
   "updateUrl": "https://websitenprogramer.github.io/OnlyClient/updates",
   "hosting": "github",
-  "setupDownloadUrl": "https://github.com/Websitenprogramer/OnlyClient/releases/download/v3.0.0 /OnlyClient-Setup.exe"
+  "setupDownloadUrl": "https://github.com/Websitenprogramer/OnlyClient/releases/download/v3.0.1/OnlyClient-Setup.exe"
   "autoUpdate": true
 }
