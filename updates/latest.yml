@@ -1,6 +1,6 @@
-version: 3.0.1
+version: 3.0.4.
 files:
-  - url: https://github.com/Websitenprogramer/OnlyClient/releases/download/v3.0.1/OnlyClient-Setup.exe
+  - url: https://github.com/Websitenprogramer/OnlyClient/releases/download/v3.0.4/OnlyClient-Setup.exe
     sha512: bpLAuC/KyCdBkxBjZCOhM2BooVF2woaxj62D90vSjyZAjuGcVsByewVhp5Zsd1kfaWsCrPiml/IDCcWJc8+EyQ==
     size: 84599538
 path: OnlyClient-Setup.exe
